@@ -11,19 +11,23 @@ body _{
     background-color: antiquewhite;
 }
 :root {
-    --primarycolor : #e91e63 ;
+    --primarycolor : #dc042a ;
 }
 header {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     border: 2px;
-    padding:15px 30px;    
+    padding:8px 30px;    
     background-color: var(--primarycolor);
 }
 .logos h1{
+    padding-left: 50px;
     color: white;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .logos {
     color: white;
@@ -31,9 +35,11 @@ header {
     gap: 0px;
 }
 .logos img {
-    
     height: 40px;
-    
+}
+.door {
+    color: var(--primarycolor);
+    padding-left: 10px;
 }
 .order {
     display: flex;
@@ -45,29 +51,33 @@ header {
     gap: 40px;
 }
 .order a{
-    font-weight: 600;
+    font-weight: 500;
     color: white;
+    padding-bottom: 5px;
 }
 .order li {
     transition: 1s ease-in;
-    transform-origin: center;
+    transform-origin: start;
 }
-.order li:hover {
-    border-bottom:1px solid black ;
-    
+.order li a:hover {
+    border-bottom: 1px solid white;
 }
-.cart li {
-    transition: 1s ease-in;
-    transform-origin: center;
+.style {
+
 }
-.cart i:hover {
-    border-bottom: 1px solid black;
+.style li a:hover {
+    padding: 6px;
+    border-bottom: 1px solid white;
 }
 .sign button {
-    padding:10px 30px;
-    border-radius: 10px;
+    padding:13px 25px;
+    border-radius: 5px;
     font-size: 1.1rem;
     border: none;
+  
+}
+.sign button  a {
+   color: var(--primarycolor);
 } 
 main {
     padding-top: 30px;
@@ -78,34 +88,36 @@ main {
 main h1 {
     font-size: 3rem;
     padding-left: 400px;
-    padding-right: 400px;
- 
-   
+    padding-right: 400px;  
+    line-height: 4rem;
 }
 main p {
     padding-top: 50px;
     text-align: center;
-    text-transform: capitalize;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 400;
 }
 .house {
-    border: 2px solid var(--primarycolor);
-    width: 300px;
+    border: 2px solid grey;
+    width: 280px;
+    height: 150px;
     padding:8px 20px;
     padding-top: 15px;
     border-radius: 10px;
+    background-color: rgb(241, 241, 241);
 }
 .house h3 {
-    font-weight: 500;
+    font-weight: 900;
     text-transform: capitalize;
-    padding-top: 10px;
-    padding-bottom: 3px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 1rem;
 }
 .house p {
     padding: 0;
-    font-size: 1rem;
+    font-size: 14px;
     text-align: start;
+    font-weight: 500;
 }
 .sect {
     padding: 30px;
@@ -255,7 +267,7 @@ main p {
 .sect5 h1 {
     text-align: center;
     font-size: 2.5rem;
-    padding-top: 10px;
+    margin-top: 3rem;
     padding-bottom: 30px;
 }
 .select {
@@ -501,32 +513,52 @@ footer {
     align-items: center;
 }
 main h1 {
-    font-size: 1.5rem;
-    padding-left: 50px;
-    padding-right:50px;
+    font-size: 1.6rem;
+    padding-left: 60px;
+    padding-right:60px;
     text-align: center;
+    font-family:  sans-serif;
+    line-height: 2.5rem;
 }
 main p {
     padding-top: 50px;
     text-align: center;
-    text-transform: capitalize;
-    font-size: 1.1rem;
-    font-weight: 400;
-    padding-left: 20px;
-    padding-right: 20px;
+    text-transform: initial;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-left: 50px;
+    padding-right:50px;
     width: 100%;
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .sect {
     flex-wrap: wrap;
     padding-top: 15px;
+    gap: 5px;
+        /* padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px; */
 }
 .house {
-    border: 2px solid red;
-    width: 250px;
-    padding:10px 5px;
+     border: 2px solid grey;
+    width: 300px;
+    height: 150px;
+    padding-left:15px ;
+    padding-right: 15px;
     padding-top: 15px;
     border-radius: 5px;
+        /* border: 2px solid grey;
+        width: 280px;
+        height: 150px;
+        padding:8px 20px;
+        padding-top: 15px;
+        border-radius: 10px;
+        background-color: rgb(241, 241, 241); */
+
+    
 }
 .house p {
     padding: 0;
@@ -569,7 +601,7 @@ main p {
    display: block;
 }
 .redeem {
-    padding-top: 0px;
+    padding-top: 10px;
     padding-right: 20px;
     padding-left: 20px;
     text-align: center;
@@ -583,6 +615,13 @@ main p {
 .redeem p {
     text-align: start;
     font-size: 1.1rem; 
+    font-weight: 300;
+    /* color: rgb(88, 88, 88); */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#con p {
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 .sect3 {
     margin-top: 30px;
