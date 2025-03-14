@@ -25,9 +25,7 @@ header {
     color: white;
     font-size: 1.7rem;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+     text-align: center;
 }
 .logos {
     color: white;
