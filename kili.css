@@ -552,15 +552,6 @@ main p {
     padding-right: 15px;
     padding-top: 15px;
     border-radius: 5px;
-        /* border: 2px solid grey;
-        width: 280px;
-        height: 150px;
-        padding:8px 20px;
-        padding-top: 15px;
-        border-radius: 10px;
-        background-color: rgb(241, 241, 241); */
-
-    
 }
 .house p {
     padding: 0;
@@ -679,6 +670,7 @@ main p {
 }
 .app {
     width: 100%;
+    border: none;
     /* width: 550px; */
     /* border: 2px solid red ;  */
 }
